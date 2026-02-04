@@ -1,0 +1,84 @@
+/* 여기서부터 css해주세요 */
+
+:root {
+  font-family: 'PretendardVariable', sans-serif;
+}
+
+@font-face {
+  font-family: 'PretendardVariable';
+  src: url(/font/woff2/PretendardVariable.woff2);
+  font-weight: 100 900;
+}
+
+.banner-wrapper {
+  width: 100%;
+  aspect-ratio: 1680 / 399;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+}
+
+.banner {
+  background-image: url(/src/images/UberTaxi.png);
+  position: relative;
+  inline-size: 100%;
+  block-size: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contents {
+  padding: 64px 264px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 28px;
+}
+
+.download-btn {
+  background-color: #000;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 4px;
+  box-sizing: border-box;
+  border: 0px;
+  cursor: pointer;
+
+  .btn-text {
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1;
+    margin: 0;
+  }
+}
+
+.contents-text {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 28px;
+
+  .banner-title,
+  .banner-text {
+    display: block;
+    margin: 0;
+  }
+
+  .banner-title {
+    font-size: 50px;
+    font-weight: 700;
+  }
+
+  .banner-text {
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
