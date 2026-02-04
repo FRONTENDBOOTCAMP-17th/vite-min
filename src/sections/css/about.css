@@ -1,1 +1,69 @@
 /* 여기서부터 css해주세요 */
+
+#inner {
+  margin: 0px 200px;
+  padding: 64px;
+  display: flex;
+  width: 1280px;
+  padding: 64px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#set {
+  display: flex;
+  align-items: flex-start;
+  gap: 36px;
+  align-self: stretch;
+}
+
+#card-company {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  flex: 1 0 0;
+}
+
+#card-news {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  flex: 1 0 0;
+}
+
+.card-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.card-title {
+  color: #000;
+  /* Label/Large */
+  font-family: Pretendard;
+  font-size: 21.328px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.card-contents {
+  align-self: stretch;
+  color: #000;
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.card-button {
+  color: #000;
+  display: flex;
+  padding: 4px;
+  align-items: flex-start;
+  border-bottom: 1px solid #000;
+  background-color: #fff;
+  text-decoration: none;
+}
