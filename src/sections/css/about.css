@@ -1,23 +1,28 @@
 /* 여기서부터 css해주세요 */
 
-#inner {
-  margin: 0px 200px;
+#about {
+  width: 100%;
+}
+
+#about #inner {
+  margin: 0px auto;
   padding: 64px;
   display: flex;
-  width: 1280px;
-  padding: 64px;
+  max-width: 1280px;
+  width: 100%;
+  box-sizing: border-box;
   flex-direction: column;
   align-items: flex-start;
 }
 
-#set {
+#about #set {
   display: flex;
   align-items: flex-start;
   gap: 36px;
   align-self: stretch;
 }
 
-#card-company {
+#about #card {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -25,20 +30,12 @@
   flex: 1 0 0;
 }
 
-#card-news {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 12px;
-  flex: 1 0 0;
-}
-
-.card-icon {
+#about .card-icon {
   width: 24px;
   height: 24px;
 }
 
-.card-title {
+#about .card-title {
   color: #000;
   /* Label/Large */
   font-family: Pretendard;
@@ -48,7 +45,7 @@
   line-height: 150%;
 }
 
-.card-contents {
+#about .card-contents {
   align-self: stretch;
   color: #000;
   font-family: Pretendard;
@@ -58,7 +55,7 @@
   line-height: 160%;
 }
 
-.card-button {
+#about .card-button {
   color: #000;
   display: flex;
   padding: 4px;
@@ -66,4 +63,61 @@
   border-bottom: 1px solid #000;
   background-color: #fff;
   text-decoration: none;
+}
+
+/* 태블릿 (850px 이하) */
+@media (max-width: 850px) {
+  #about #inner {
+    width: 100%;
+    margin: 0;
+    padding: 56px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+  }
+
+  #about #set {
+    display: flex;
+    align-items: flex-start;
+    gap: 36px;
+    align-self: stretch;
+  }
+
+  #about #card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    flex: 1 0 0;
+  }
+}
+
+/* 모바일 (500px 이하) */
+@media (max-width: 500px) {
+  #about #inner {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    padding: 40px 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+  }
+
+  #about #set {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 36px;
+    align-self: stretch;
+  }
+
+  #about #card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    align-self: stretch;
+  }
 }
