@@ -4,21 +4,111 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>qna</title>
-    <link rel="shortcut icon" href="/favicon/likelion.ico" type="image/x-icon" />
-    <link rel="icon" href="/favicon/likelion.svg" type="image/svg+xml" />
-    <link rel="preload" as="font" href="/font/suit/SUIT-Variable.woff2" />
-    <link rel="stylesheet" href="/font/suit/SUIT-Variable.css" />
-    <link rel="stylesheet" href="/src/common/index.css" />
     <link rel="stylesheet" href="/src/sections/css/qna.css" />
+    <link rel="stylesheet" href="/vite-min/public/font/pretendardvariable.css" />
   </head>
-  <body style="margin: 50px">
-    <div class="go-index"><a href="/index.html">Index로 이동</a></div>
+  <body>
+    <div class="qna-wrapper">
+      <section class="qna-section">
+        <h2 class="qna-title">자주 하는 질문</h2>
 
-    <!-- Header -->
-    <h1>qna html</h1>
+        <ul class="qna-list">
+          <li class="qna-item">
+            <input type="checkbox" id="qna-01" class="qna-input" />
+            <label for="qna-01" class="qna-header">
+              <span class="answer-question">미터기 요금을 중복으로 결제하였습니다 (앱+현장)</span>
+              <div class="answer-toggle">
+                <svg class="icon-plus" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 6L12 18" stroke="black" stroke-width="2" stroke-linecap="round" />
+                  <path d="M18 12L6 12" stroke="black" stroke-width="2" stroke-linecap="round" />
+                </svg>
+                <svg class="icon-minus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M18 12L6 12" stroke="black" stroke-width="2" stroke-linecap="round" />
+                </svg>
+              </div>
+            </label>
+            <div class="qna-answer">
+              <div class="answer-content"><p>내 이름은 이규화 17기 멋사 이것을 보는 사람이 있을까? 없겠지? 보려나? 보면 인정</p></div>
+            </div>
+          </li>
 
-    <hr />
+          <li class="qna-item">
+            <input type="checkbox" id="qna-02" class="qna-input" />
+            <label for="qna-02" class="qna-header">
+              <span class="answer-question">미터기 요금 외에 다른 요금이 결제 됐습니다 (통행료, 가승인 등)</span>
+              <div class="answer-toggle">
+                <svg class="icon-plus" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 6L12 18" stroke="black" stroke-width="2" stroke-linecap="round" />
+                  <path d="M18 12L6 12" stroke="black" stroke-width="2" stroke-linecap="round" />
+                </svg>
+                <svg class="icon-minus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M18 12L6 12" stroke="black" stroke-width="2" stroke-linecap="round" />
+                </svg>
+              </div>
+            </label>
+            <div class="qna-answer">
+              <div class="answer-content"><p>내 이름은 이규화 17기 멋사 이것을 보는 사람이 있을까? 없겠지? 보려나? 보면 인정</p></div>
+            </div>
+          </li>
 
-    <!-- Contents -->
+          <li class="qna-item">
+            <input type="checkbox" id="qna-03" class="qna-input" />
+            <label for="qna-03" class="qna-header">
+              <span class="answer-question">분실물과 관련해 기사에게 연락하기</span>
+              <div class="answer-toggle">
+                <svg class="icon-plus" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 6L12 18" stroke="black" stroke-width="2" stroke-linecap="round" />
+                  <path d="M18 12L6 12" stroke="black" stroke-width="2" stroke-linecap="round" />
+                </svg>
+                <svg class="icon-minus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M18 12L6 12" stroke="black" stroke-width="2" stroke-linecap="round" />
+                </svg>
+              </div>
+            </label>
+            <div class="qna-answer">
+              <div class="answer-content"><p>내 이름은 이규화 17기 멋사 이것을 보는 사람이 있을까? 없겠지? 보려나? 보면 인정</p></div>
+            </div>
+          </li>
+
+          <li class="qna-item">
+            <input type="checkbox" id="qna-04" class="qna-input" />
+            <label for="qna-04" class="qna-header">
+              <span class="answer-question">택시가 잡혀 기다렸으나 저와는 반대방향으로 이동했어요</span>
+              <div class="answer-toggle">
+                <svg class="icon-plus" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 6L12 18" stroke="black" stroke-width="2" stroke-linecap="round" />
+                  <path d="M18 12L6 12" stroke="black" stroke-width="2" stroke-linecap="round" />
+                </svg>
+                <svg class="icon-minus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M18 12L6 12" stroke="black" stroke-width="2" stroke-linecap="round" />
+                </svg>
+              </div>
+            </label>
+            <div class="qna-answer">
+              <div class="answer-content"><p>내 이름은 이규화 17기 멋사 이것을 보는 사람이 있을까? 없겠지? 보려나? 보면 인정</p></div>
+            </div>
+          </li>
+
+          <li class="qna-item">
+            <input type="checkbox" id="qna-05" class="qna-input" />
+            <label for="qna-05" class="qna-header">
+              <span class="answer-question">프로모션 코드가 적용되지 않았습니다.</span>
+              <div class="answer-toggle">
+                <svg class="icon-plus" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 6L12 18" stroke="black" stroke-width="2" stroke-linecap="round" />
+                  <path d="M18 12L6 12" stroke="black" stroke-width="2" stroke-linecap="round" />
+                </svg>
+                <svg class="icon-minus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M18 12L6 12" stroke="black" stroke-width="2" stroke-linecap="round" />
+                </svg>
+              </div>
+            </label>
+            <div class="qna-answer">
+              <div class="answer-content"><p>내 이름은 이규화 17기 멋사 이것을 보는 사람이 있을까? 없겠지? 보려나? 보면 인정</p></div>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
   </body>
 </html>
