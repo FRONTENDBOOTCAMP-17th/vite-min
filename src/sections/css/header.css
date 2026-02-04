@@ -1,1 +1,152 @@
 /* 여기서부터 css해주세요 */
+/* 헤더 */
+
+.site-header {
+  background: var(--primary, #000);
+  color: #fff;
+}
+.header-inner {
+  max-width: 1680px;
+  margin: 0 auto;
+  padding-left: 150px;
+  padding-right: 32px;
+  height: 64px;
+
+  display: flex;
+  align-items: center;
+}
+
+/* 로고 */
+
+.logo a {
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 12px 12px;
+}
+
+.logo2 {
+  margin-left: auto;
+}
+
+/* 내비게이션 */
+.gnb .menu {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.gnb ul,
+.gnb li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.gnb a {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #fff;
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+.gnb {
+  margin-left: 25px;
+}
+
+/* Arrow icon */
+
+.icon-arrow {
+  transition: transform 0.2s ease;
+}
+
+/* hover 시 회전 (드롭다운 느낌)*/
+.has-dropdown:hover .icon-arrow {
+  transform: rotate(180deg);
+}
+
+.header-util {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  position: absolute;
+  right: 150px;
+}
+
+.signup-btn {
+  background: #fff;
+  color: #000;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* 모바일 */
+
+@media (max-width: 768px) {
+  /* 헤더 전체 */
+  .header-inner {
+    max-width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+    height: 56px;
+    position: relative;
+  }
+
+  /* GNB 숨김 */
+  .gnb {
+    display: none;
+  }
+
+  /* 오른쪽 유틸 영역 */
+  .header-util {
+    position: static;
+    margin-left: auto;
+    gap: 0;
+  }
+
+  /* KO-KR, 가입하기 숨김 */
+  .logo2,
+  .signup-btn {
+    display: none;
+  }
+
+  /* 버튼 표시 */
+  .menu-btn {
+    display: block;
+  }
+}
+/*  테블릿  */
+@media (max-width: 1199px) and (min-width: 769px) {
+  .header-inner {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+
+  .gnb .menu {
+    gap: 12px;
+  }
+
+  .header-util {
+    right: 64px;
+  }
+
+  .logo a {
+    padding: 8px;
+  }
+}
