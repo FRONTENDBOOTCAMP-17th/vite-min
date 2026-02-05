@@ -38,7 +38,9 @@
 }
 
 .apply-container {
-  inline-size: 1680px;
+  inline-size: 100%;
+  max-inline-size: 1680px;
+  margin-inline: auto;
   block-size: 733px;
 }
 
