@@ -9,7 +9,7 @@
   padding: 64px;
   display: flex;
   max-width: 1280px;
-  width: 100%;
+  width: calc(100%-400px);
   box-sizing: border-box;
   flex-direction: column;
   align-items: flex-start;
