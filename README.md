@@ -39,32 +39,6 @@ index.html {
 
 ---
 
-## 📝 역활 분배
-
-| 파일           | 작업자        |
-| -------------- | ------------- |
-| index.html     | 엄인호        |
-| style.css      | 엄인호        |
-| main.js        | 엄인호        |
-| header.html    | 홍정빈        |
-| banner.html    | 박현우        |
-| about.html     | 엄인호        |
-| download.html  | 엄인호        |
-| qna.html       | 이규화        |
-| download2.html | 엄인호        |
-| apply.html     | 박현우        |
-| footer.html    | 홍정빈        |
-| header.css     | 홍정빈,이규화 |
-| banner.css     | 박현우        |
-| about.css      | 엄인호        |
-| download.css   | 엄인호        |
-| qna.css        | 박현우        |
-| download2.css  | 엄인호        |
-| apply.css      | 이규화,엄인호 |
-| footer.css     | 홍정빈        |
-
----
-
 ## 📂 파일 디렉토리
 
 ```text
@@ -81,27 +55,27 @@ vite-min/
 │   │   └── UberTaxi.png
 │   ├── sections/                   # 페이지 섹션별 HTML/CSS 파일
 │   │   ├── css/
-│   │   │   ├── about.css           # About 섹션 스타일
-│   │   │   ├── apply.css           # Apply 섹션 스타일
-│   │   │   ├── banner.css          # Banner 섹션 스타일
-│   │   │   ├── download.css        # Download 섹션 스타일
-│   │   │   ├── download2.css       # Download2 섹션 스타일
-│   │   │   ├── footer.css          # Footer 스타일
-│   │   │   ├── header.css          # Header 스타일
-│   │   │   └── qna.css             # QnA 섹션 스타일
-│   │   ├── about.html              # About 섹션 마크업
-│   │   ├── apply.html              # Apply 섹션 마크업
-│   │   ├── banner.html             # Banner 섹션 마크업
-│   │   ├── download.html           # Download 섹션 마크업
-│   │   ├── download2.html          # Download2 섹션 마크업
-│   │   ├── footer.html             # Footer 마크업
-│   │   ├── header.html             # Header 마크업
-│   │   └── qna.html                # QnA 섹션 마크업
+│   │   │   ├── about.css           # About 섹션 스타일 (작업자: 엄인호)
+│   │   │   ├── apply.css           # Apply 섹션 스타일 (작업자: 박현우)
+│   │   │   ├── banner.css          # Banner 섹션 스타일 (작업자: 박현우)
+│   │   │   ├── download.css        # Download 섹션 스타일 (작업자: 엄인호)
+│   │   │   ├── download2.css       # Download2 섹션 스타일 (작업자: 엄인호)
+│   │   │   ├── footer.css          # Footer 스타일 (작업자: 홍정빈)
+│   │   │   ├── header.css          # Header 스타일 (작업자: 홍정빈,이규화)
+│   │   │   └── qna.css             # QnA 섹션 스타일 (작업자: 이규화,엄인호)
+│   │   ├── about.html              # About 섹션 마크업 (작업자: 엄인호)
+│   │   ├── apply.html              # Apply 섹션 마크업 (작업자: 박현우)
+│   │   ├── banner.html             # Banner 섹션 마크업 (작업자: 박현우)
+│   │   ├── download.html           # Download 섹션 마크업 (작업자: 엄인호)
+│   │   ├── download2.html          # Download2 섹션 마크업 (작업자: 엄인호)
+│   │   ├── footer.html             # Footer 마크업 (작업자: 홍정빈)
+│   │   ├── header.html             # Header 마크업 (작업자: 홍정빈)
+│   │   └── qna.html                # QnA 섹션 마크업 (작업자: 이규화)
 │   ├── utils/                      # 유틸리티 CSS 파일
 │   │   ├── base.css                # 기본 스타일 (폰트, 변수 등)
 │   │   └── reset.css               # CSS 초기화
-│   ├── main.js                     # 메인 JavaScript 진입점
-│   └── style.css                   # 전역 스타일시트
-└── index.html                      # 메인 HTML 파일 (진입점)
+│   ├── main.js                     # 메인 JavaScript 진입점 (작업자: 엄인호)
+│   └── style.css                   # 전역 스타일시트 (작업자: 엄인호)
+└── index.html                      # 메인 HTML 파일 (진입점) (작업자: 엄인호)
 
 ```
