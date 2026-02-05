@@ -30,11 +30,15 @@
 }
 
 .contents {
-  padding: 64px 264px;
+  padding: 64px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 28px;
+  inline-size: 100%;
+  max-inline-size: 1280px;
+  margin-inline: auto;
+  box-sizing: border-box;
 }
 
 .download-btn {
@@ -92,6 +96,9 @@
 
   .contents {
     padding: 56px 32px;
+    inline-size: 100%;
+    max-inline-size: 786px;
+    box-sizing: border-box;
 
     .banner-title {
       font-size: 38px;
@@ -111,6 +118,9 @@
 
   .contents {
     padding: 40px 24px;
+    box-sizing: border-box;
+    inline-size: 100%;
+    max-inline-size: 500px;
 
     .banner-title {
       font-size: 28px;
