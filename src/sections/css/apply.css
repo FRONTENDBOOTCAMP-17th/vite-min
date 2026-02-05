@@ -158,3 +158,42 @@
     font-size: 16px;
   }
 }
+
+.location input {
+  font-weight: 600;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+.form-input.is-valid {
+  border: solid 2px #048848;
+  background-color: rgba(4, 136, 72, 10%);
+}
+
+.form-input.is-invalid {
+  border: solid 2px #e11900;
+  background-color: rgba(225, 25, 0, 10%);
+}
+
+.btn-clear {
+  background: none;
+  border: none;
+  padding: 0;
+  position: absolute;
+  right: 12px;
+  top: 25px;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+}
+
+.pwd-input-container {
+  position: relative;
+  width: 100%;
+}
+
+.error-text {
+  font-size: 12px;
+  margin: 0;
+  color: #e11900;
+}
