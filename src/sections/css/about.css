@@ -1,15 +1,10 @@
 /* 여기서부터 css해주세요 */
 
-#about {
-  width: 100%;
-}
-
 #about #inner {
   margin: 0px auto;
   padding: 64px;
   display: flex;
   max-width: 1280px;
-  width: calc(100%-400px);
   box-sizing: border-box;
   flex-direction: column;
   align-items: flex-start;
