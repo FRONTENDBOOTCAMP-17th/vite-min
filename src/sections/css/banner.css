@@ -36,7 +36,7 @@
   align-items: flex-start;
   gap: 28px;
   inline-size: 100%;
-  max-inline-size: 1152px;
+  max-inline-size: 1280px;
   margin-inline: auto;
   box-sizing: border-box;
 }
@@ -95,7 +95,7 @@
   }
 
   .contents {
-    padding: 56px;
+    padding: 56px 32px;
     inline-size: 100%;
     max-inline-size: 786px;
     box-sizing: border-box;
@@ -117,10 +117,10 @@
   }
 
   .contents {
-    padding: 40px;
+    padding: 40px 24px;
     box-sizing: border-box;
     inline-size: 100%;
-    max-inline-size: 452px;
+    max-inline-size: 500px;
 
     .banner-title {
       font-size: 28px;
