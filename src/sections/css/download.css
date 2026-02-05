@@ -1,5 +1,6 @@
 /* 여기서부터 css해주세요 */
-.download {
+#download {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,31 +9,33 @@
   background-color: #f5f5f5;
 }
 
-#inner {
-  margin: 0px 200px;
-  display: flex;
-  width: 1280px;
+#download #inner {
+  margin: 0px auto;
   padding: 64px;
+  display: flex;
+  max-width: 1280px;
+  width: 100%;
+  box-sizing: border-box;
   flex-direction: column;
   align-items: flex-start;
   gap: 36px;
 }
 
-h2 {
+#download h2 {
   margin: 0px;
   font-size: 2rem;
   font-style: normal;
   font-weight: 700;
 }
 
-#set {
+#download #set {
   display: flex;
   align-items: flex-start;
   gap: 36px;
   align-self: stretch;
 }
 
-.card {
+#download .card {
   background-color: #fff;
   display: flex;
   padding: 44px;
@@ -42,20 +45,64 @@ h2 {
   flex: 1 0 0;
 }
 
-.card-logo {
+#download .card-logo {
   width: 104px;
   height: 104px;
 }
 
-.card-title {
+#download .card-title {
   font-size: 1.75rem;
   font-style: normal;
   font-weight: 600;
   line-height: 150%;
 }
 
-.card-arrow {
+#download .card-arrow {
   width: 56px;
   height: 56px;
   margin-left: auto;
+}
+
+@media (max-width: 850px) {
+  #download #inner {
+    height: 560px;
+    padding: 56px 32px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    align-self: stretch;
+  }
+
+  #download #set {
+    flex-direction: column;
+    gap: 36px;
+    flex: 1 0 0;
+    align-self: stretch;
+  }
+
+  #download .card {
+    padding: 32px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    flex: 1 0 0;
+    align-self: stretch;
+  }
+
+  #download .card-logo {
+    width: 104px;
+    height: 104px;
+  }
+
+  #download .card-title {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+  }
+
+  #download .card-arrow {
+    width: 56px;
+    height: 56px;
+  }
 }
