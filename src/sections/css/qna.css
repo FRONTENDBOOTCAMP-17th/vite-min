@@ -1,7 +1,7 @@
 .qna-wrapper {
-  max-width: 1280px;
-  margin: 64px auto;
-  padding: 30px;
+  max-width: 1680px;
+  margin: 0px 200px;
+  padding: 64px;
 }
 .qna-title {
   padding: 0 0 36px;
@@ -68,6 +68,16 @@
   line-height: 1.6;
 }
 
+ol {
+  padding-left: 0px;
+  list-style-position: inside;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
 .qna-input:checked ~ .qna-answer {
   max-height: 500px;
 }
@@ -78,4 +88,17 @@
 
 .qna-input:checked ~ .qna-header .icon-minus {
   display: block !important;
+}
+
+@media (max-width: 850px) {
+  .qna-wrapper {
+    margin: 0;
+    padding: 56px 32px;
+  }
+}
+
+@media (max-width: 500px) {
+  .qna-wrapper {
+    padding: 40px 24px;
+  }
 }
