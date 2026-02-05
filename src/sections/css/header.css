@@ -1,1 +1,236 @@
-/* 여기서부터 css해주세요 */
+/* 헤더 */
+
+.site-header {
+  background: var(--primary, #000);
+  color: #fff;
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  max-width: 1680px;
+  margin: 0 auto;
+  padding-left: 150px;
+  padding-right: 32px;
+  height: 64px;
+}
+
+/* 로고 */
+
+.logo a {
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 12px 12px;
+}
+
+.logo2 {
+  margin-left: auto;
+}
+
+/* 내비게이션 */
+.gnb .menu {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.gnb ul,
+.gnb li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.gnb a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 4px;
+  color: #fff;
+  font-size: 0.95rem;
+}
+.gnb {
+  margin-left: 25px;
+}
+.sidebar-menu {
+  display: none;
+}
+
+.header-util {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  position: absolute;
+  right: 150px;
+}
+
+.signup-btn {
+  background: #fff;
+  color: #000;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* ======================================================================================= */
+.has-dropdown {
+  position: relative; /* 하위 메뉴의 위치 기준점 */
+  list-style: none;
+}
+.has-dropdown a svg {
+  margin-left: 8px;
+  transition: transform 0.3s ease; /* 부드러운 회전 효과 */
+}
+
+.has-dropdown .info-dropdown-menu,
+.has-dropdown .help-dropdown-menu {
+  display: none; /* 평소에는 숨김 */
+  position: absolute;
+  top: 100%;
+  left: -30%;
+  min-width: 150px;
+  background-color: rgb(0, 0, 0, 0.8);
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  list-style: none;
+}
+
+.info-dropdown-menu li a,
+.help-dropdown-menu li a {
+  display: block; /* 클릭 영역 확보 */
+  padding: 10px 20px;
+}
+.has-dropdown:hover .info-dropdown-menu,
+.has-dropdown:hover .help-dropdown-menu {
+  display: block;
+  z-index: 1;
+}
+.has-dropdown:hover a .info-img,
+.has-dropdown:hover a .help-img {
+  transform: rotate(180deg);
+}
+
+/* ======================================================================================= */
+
+/*  테블릿  */
+@media (max-width: 1199px) and (min-width: 769px) {
+  .header-inner {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+
+  .gnb .menu {
+    gap: 12px;
+  }
+
+  .header-util {
+    right: 64px;
+  }
+
+  .logo a {
+    padding: 8px;
+  }
+}
+@media (min-width: 769px) {
+  .sidebar-menu {
+    display: none;
+  }
+}
+
+/* 모바일 */
+@media (max-width: 768px) {
+  /* 헤더 전체 */
+  .header-inner {
+    max-width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+    height: 56px;
+    position: relative;
+  }
+
+  /* GNB 숨김 */
+  .gnb {
+    display: none;
+  }
+
+  /* 오른쪽 유틸 영역 */
+  .header-util {
+    position: static;
+    margin-left: auto;
+    gap: 0;
+  }
+
+  /* KO-KR, 가입하기 숨김 */
+  .logo2,
+  .signup-btn {
+    display: none;
+  }
+
+  /* 버튼 표시 */
+  .menu-btn {
+    display: block;
+    /* ==추가== */
+    padding: 0;
+    z-index: 2001;
+    /* ===== */
+  }
+  .sidebar-menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -30%;
+    width: 30%;
+    height: 100vh;
+    min-width: 200px;
+    background-color: #111;
+    margin: 0;
+    padding: 60px 0;
+    list-style: none;
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    z-index: 2000;
+    visibility: hidden;
+  }
+
+  .sidebar-menu li {
+    width: 100%;
+  }
+
+  .sidebar-menu li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 12px 20px;
+    overflow: hidden;
+    border-bottom: 1px solid #222;
+    transition: background-color 0.2s;
+  }
+
+  .sidebar-menu li a:hover,
+  .sidebar-menu li a:active {
+    background-color: #222;
+  }
+
+  .menu-container:focus-within .sidebar-menu {
+    right: 0;
+    visibility: visible;
+    box-shadow: -100vw 0 0 100vw rgba(0, 0, 0, 0.5);
+  }
+}

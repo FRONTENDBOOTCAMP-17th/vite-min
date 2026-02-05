@@ -4,8 +4,7 @@ const sections = ['header', 'banner', 'about', 'download', 'qna', 'download2', '
 
 async function loadSection(name) {
   const el = document.getElementById(name);
-  const fileName = name === 'download2' ? 'download' : name;
-  const res = await fetch(`./src/sections/${fileName}.html`);
+  const res = await fetch(`./src/sections/${name}.html`);
   el.innerHTML = await res.text();
 }
 

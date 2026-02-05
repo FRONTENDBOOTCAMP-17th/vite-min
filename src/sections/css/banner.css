@@ -12,7 +12,6 @@
 
 .banner-wrapper {
   width: 100%;
-  aspect-ratio: 1680 / 399;
   overflow: hidden;
   position: relative;
   margin: 0 auto;
@@ -22,7 +21,7 @@
   background-image: url(/src/images/UberTaxi.png);
   position: relative;
   inline-size: 100%;
-  block-size: 100%;
+  block-size: 399px;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -31,11 +30,15 @@
 }
 
 .contents {
-  padding: 64px 264px;
+  padding: 64px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 28px;
+  inline-size: 100%;
+  max-inline-size: 1280px;
+  margin-inline: auto;
+  box-sizing: border-box;
 }
 
 .download-btn {
@@ -75,10 +78,55 @@
   .banner-title {
     font-size: 50px;
     font-weight: 700;
+    white-space: nowrap;
   }
 
   .banner-text {
     font-size: 16px;
     font-weight: 500;
+  }
+}
+
+@media (width <= 850px) {
+  .banner {
+    width: 100%;
+    block-size: 359px;
+    background-position: 50% center;
+  }
+
+  .contents {
+    padding: 56px 32px;
+    inline-size: 100%;
+    max-inline-size: 786px;
+    box-sizing: border-box;
+
+    .banner-title {
+      font-size: 38px;
+    }
+    .banner-text {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (width <= 500px) {
+  .banner {
+    width: 100%;
+    block-size: 256px;
+    background-position: 60% center;
+  }
+
+  .contents {
+    padding: 40px 24px;
+    box-sizing: border-box;
+    inline-size: 100%;
+    max-inline-size: 500px;
+
+    .banner-title {
+      font-size: 28px;
+    }
+    .banner-text {
+      font-size: 16px;
+    }
   }
 }

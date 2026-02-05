@@ -1,9 +1,9 @@
 /* 여기서부터 css해주세요 */
-#download {
+#download2 {
   background-color: #f5f5f5;
 }
 
-#download #inner {
+#download2 #inner {
   margin: 0px auto;
   padding: 64px;
   display: flex;
@@ -14,21 +14,21 @@
   gap: 36px;
 }
 
-#download h2 {
+#download2 h2 {
   margin: 0px;
   font-size: 2rem;
   font-style: normal;
   font-weight: 700;
 }
 
-#download #set {
+#download2 #set {
   display: flex;
   align-items: flex-start;
   gap: 36px;
   align-self: stretch;
 }
 
-#download .card {
+#download2 .card {
   background-color: #fff;
   display: flex;
   padding: 44px;
@@ -38,41 +38,41 @@
   flex: 1 0 0;
 }
 
-#download .card-logo {
+#download2 .card-logo {
   width: 104px;
   height: 104px;
 }
 
-#download .card-title {
+#download2 .card-title {
   font-size: 1.25rem;
   font-style: normal;
   font-weight: 600;
   line-height: 150%;
 }
 
-#download .card-arrow {
+#download2 .card-arrow {
   width: 56px;
   height: 56px;
   margin-left: auto;
 }
 
 @media (max-width: 900px) {
-  #download #inner {
+  #download2 #inner {
     padding: 56px 32px;
     gap: 36px;
     align-self: stretch;
   }
 
-  #download h2 {
+  #download2 h2 {
     font-size: 1.75rem;
   }
 
-  #download #set {
+  #download2 #set {
     flex-direction: column;
     flex: 1 0 0;
   }
 
-  #download .card {
+  #download2 .card {
     padding: 32px;
     justify-content: center;
     align-self: stretch;
@@ -80,21 +80,21 @@
 }
 
 @media (max-width: 600px) {
-  #download #inner {
+  #download2 #inner {
     padding: 40px 24px;
     gap: 36px;
   }
 
-  #download h2 {
+  #download2 h2 {
     font-size: 1.25rem;
   }
 
-  #download #set {
+  #download2 #set {
     flex-direction: column;
     flex: 1 0 0;
   }
 
-  #download .card {
+  #download2 .card {
     padding: 32px;
     flex: 1 0 0;
     align-self: stretch;
