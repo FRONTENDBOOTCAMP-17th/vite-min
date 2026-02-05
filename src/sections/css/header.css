@@ -127,6 +127,31 @@
 
 /* ======================================================================================= */
 
+/*  테블릿  */
+@media (max-width: 1199px) and (min-width: 769px) {
+  .header-inner {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+
+  .gnb .menu {
+    gap: 12px;
+  }
+
+  .header-util {
+    right: 64px;
+  }
+
+  .logo a {
+    padding: 8px;
+  }
+}
+@media (min-width: 769px) {
+  .sidebar-menu {
+    display: none;
+  }
+}
+
 /* 모바일 */
 @media (max-width: 768px) {
   /* 헤더 전체 */
@@ -207,29 +232,5 @@
     right: 0;
     visibility: visible;
     box-shadow: -100vw 0 0 100vw rgba(0, 0, 0, 0.5);
-  }
-}
-/*  테블릿  */
-@media (max-width: 1199px) and (min-width: 769px) {
-  .header-inner {
-    padding-left: 64px;
-    padding-right: 64px;
-  }
-
-  .gnb .menu {
-    gap: 12px;
-  }
-
-  .header-util {
-    right: 64px;
-  }
-
-  .logo a {
-    padding: 8px;
-  }
-}
-@media (min-width: 769px) {
-  .sidebar-menu {
-    display: none;
   }
 }
