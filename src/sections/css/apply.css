@@ -22,10 +22,14 @@
   border-width: 0;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .form-title-container {
   display: flex;
   justify-content: space-between;
-  margin-block-end: 36px;
+  margin-block-end: 20px;
 
   .form-title {
     font-size: 20px;
@@ -121,7 +125,7 @@
 
 .terms {
   margin-inline: 0;
-  margin-block: 36px;
+  margin-block: 20px;
   line-height: 1.6;
   word-break: keep-all;
 }
@@ -149,7 +153,7 @@
     }
   }
 
-  .signup-btn {
+  .apply-signup-btn {
     display: flex;
     padding: 16px 24px;
     color: white;
@@ -196,4 +200,90 @@
   font-size: 12px;
   margin: 0;
   color: #e11900;
+}
+
+@media (width <=850px) {
+  .apply-container {
+    inline-size: 100%;
+    max-inline-size: 850px;
+    block-size: auto;
+    min-block-size: 787px;
+  }
+
+  .apply {
+    display: flex;
+    max-inline-size: 850px;
+    padding: 56px 32px;
+    flex-direction: column;
+    gap: 36px;
+
+    .title-container {
+      display: block;
+      max-width: none;
+    }
+
+    .title-container,
+    .apply-form {
+      display: block;
+      flex: none;
+      inline-size: 100%;
+      margin: 0 auto;
+    }
+
+    .apply-form {
+      inline-size: 100%;
+      max-inline-size: 786px;
+      display: flex;
+      gap: 16px;
+    }
+
+    .title-container span {
+      font-size: 38px;
+    }
+  }
+}
+
+@media (width <=500px) {
+  .apply-container {
+    inline-size: 100%;
+    max-inline-size: 850px;
+    block-size: auto;
+    min-block-size: 787px;
+  }
+
+  .apply {
+    display: flex;
+    max-inline-size: 850px;
+    padding: 56px 32px;
+    flex-direction: column;
+    gap: 36px;
+
+    .title-container {
+      display: block;
+      max-width: none;
+    }
+
+    .title-container,
+    .apply-form {
+      display: block;
+      flex: none;
+      inline-size: 100%;
+      margin: 0 auto;
+    }
+
+    .apply-form {
+      inline-size: 100%;
+      max-inline-size: 786px;
+      display: flex;
+      gap: 16px;
+
+      p.terms {
+        font-size: 12px;
+      }
+    }
+
+    .title-container span {
+      font-size: 28px;
+    }
+  }
 }
