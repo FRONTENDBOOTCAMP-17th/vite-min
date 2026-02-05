@@ -1,1 +1,168 @@
 /* 여기서부터 css해주세요 */
+/* footer */
+
+.site-footer {
+  background: #000;
+  color: #fff;
+}
+
+.footer-inner {
+  max-width: 1640px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+/* 상단 */
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.footer-brand a {
+  color: #fff;
+  font-size: 14px;
+}
+
+.footer-link {
+  display: flex;
+  color: #fff;
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+.footer-menu {
+  display: flex;
+  gap: 80px;
+}
+
+.footer-middle {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-menu h3 {
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+.footer-menu ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 10px;
+}
+
+.footer-menu li {
+  margin-bottom: 8px;
+}
+
+.footer-menu a {
+  font-size: 13px;
+  color: #ccc;
+  text-decoration: n;
+}
+
+.social {
+  display: flex;
+  gap: 16px;
+}
+
+.locale {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.locale span {
+  display: inline-flex;
+  white-space: nowrap;
+}
+
+.apps {
+  display: flex;
+  gap: 12px;
+}
+
+/* 하단 */
+.footer-bottom {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.footer-bottom p {
+  margin-bottom: 8px;
+}
+
+.policy {
+  margin-top: 12px;
+}
+
+.policy a {
+  margin-right: 16px;
+  color: #fff;
+  text-decoration: none;
+}
+/* 템플릿 */
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.footer-bottom .social,
+.footer-bottom .apps {
+  display: flex;
+  gap: 8px;
+}
+
+.footer-bottom p {
+  writing-mode: horizontal-tb !important;
+  white-space: nowrap;
+  word-break: keep-all;
+
+  font-size: 12px;
+  line-height: 1.6;
+  color: #aaa;
+  margin: 0;
+}
+
+/* 모바일 */
+@media (max-width: 768px) {
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .footer-menu {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .footer-bottom p {
+    white-space: normal;
+  }
+
+  .policy {
+    margin-top: 8px;
+  }
+}
