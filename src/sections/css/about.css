@@ -60,8 +60,8 @@
   text-decoration: none;
 }
 
-/* 태블릿 (850px 이하) */
-@media (max-width: 850px) {
+/* 태블릿 (900px 이하) */
+@media (max-width: 900px) {
   #about #inner {
     width: 100%;
     margin: 0;
@@ -89,7 +89,7 @@
 }
 
 /* 모바일 (500px 이하) */
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   #about #inner {
     width: 100%;
     margin: 0;

@@ -56,7 +56,7 @@
   margin-left: auto;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 900px) {
   #download2 #inner {
     padding: 56px 32px;
     gap: 36px;
@@ -79,7 +79,7 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   #download2 #inner {
     padding: 40px 24px;
     gap: 36px;
